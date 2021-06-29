@@ -1,0 +1,10 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Ngx Charts</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile [colspan]="( cards | async )?.chart.cols" [rowspan]="( cards | async )?.chart.rows">
+      <app-card title="chart 1">
+        <app-line-chart></app-line-chart>
+      </app-card>
+   </mat-grid-tile>
+  </mat-grid-list>
+</div>
